@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Photo Gal App</title>
+  <link rel="stylesheet" href="assets/main.css">
+</head>
+<body>
+  <header class="top">
+    <h1>ZIS GALLERY</h1>
+  </header>
+  <section class="form-section">
+    <div>
+      <form action="action_page.php">
+        <label for="pTitle"><b>PHOTO TITLE</b></label>
+        <input type="text" id="pTitle" name="pTitle">
+
+        <label for="pUrl"><b>URL</b></label>
+        <input type="text" id="pUrl" name="pUrl">
+
+        <input type="button" value="Submit" id="submit-image">
+      </form>
+    </div>
+  </section>
+  <main class="gallery">
+    <div class="position-gallery">
+      <!--  -->
+      <ul id="img-list" >
+        <!-- <li><img src="assets/images/xyz.jpg" alt="" class="galImg" /></li>
+        <li><img src="assets/images/cha tay.jpg" alt="" /></li>
+        <li><img src="assets/images/new design.png" alt="" /></li>
+        <li><img src="assets/images/todoAppDesign.png" alt="" /></li>
+        <li><img src="assets/images/vondo.png" alt="" /></li>
+        <li><img src="assets/images/xx.png" alt="" /></li> -->
+      </ul>
+    </div>
+  </main>
+  <script type="text/javascript" src="src/pouchdb-5.3.2.min.js"></script>
+  <script type="text/javascript" src="src/galApp.js"></script>
+</body>
+</html>
