@@ -25,17 +25,16 @@
   <main class="gallery">
     <div class="position-gallery">
       <!--  -->
-      <ul id="img-list" >
-        <!-- <li><img src="assets/images/xyz.jpg" alt="" class="galImg" /></li>
-        <li><img src="assets/images/cha tay.jpg" alt="" /></li>
-        <li><img src="assets/images/new design.png" alt="" /></li>
-        <li><img src="assets/images/todoAppDesign.png" alt="" /></li>
-        <li><img src="assets/images/vondo.png" alt="" /></li>
-        <li><img src="assets/images/xx.png" alt="" /></li> -->
-      </ul>
+      <ul id="img-list" ></ul>
     </div>
   </main>
+  <script type="text/javascript" src="src/ctrl/initialize.js"></script>
   <script type="text/javascript" src="src/pouchdb-5.3.2.min.js"></script>
-  <script type="text/javascript" src="src/galApp.js"></script>
+  <script type="text/javascript" src="src/model/galApp.js"></script>
+  <script type="text/javascript" src="src/view/addPhoto.js"></script>
+  <script>
+   window.addEventListener("load",
+       pl.view.createPhoto.addEventListeners);
+  </script>
 </body>
 </html>
