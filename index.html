@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <title>Photo Gal App</title>
   <link rel="stylesheet" href="assets/main.css">
+  <script type="text/javascript">
+
+  </script>
 </head>
 <body>
   <header class="top">
@@ -32,9 +35,15 @@
   <script type="text/javascript" src="src/pouchdb-5.3.2.min.js"></script>
   <script type="text/javascript" src="src/model/galApp.js"></script>
   <script type="text/javascript" src="src/view/addPhoto.js"></script>
+  <script type="text/javascript" src="src/view/showPhoto.js"></script>
   <script>
-   window.addEventListener("load",
-       pl.view.createPhoto.addEventListeners);
+
+   window.addEventListener("load",function() {
+        pl.view.readPhoto.showGal();
+        pl.view.createPhoto.addEventListeners();
+
+
+   });
   </script>
 </body>
 </html>
